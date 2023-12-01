@@ -181,8 +181,8 @@ export default function MenuDrawer() {
                     </Box>
                     <List dense={true}>
                         {['glaucis', 'hirsuta', 'philodice', 'floriceps', 'coeligena', 'chionura'].map((text, index) => (
-                            <ListItem>
-                                <ListItemButton key={index + text}>
+                            <ListItem key={index + text}>
+                                <ListItemButton>
                                     <ListItemIcon sx={{ minWidth: "26px" }}>
                                         <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" sx={{ width: 16, height: 16 }} />
                                     </ListItemIcon>
